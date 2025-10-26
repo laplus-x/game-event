@@ -23,7 +23,9 @@ interface SpineBoyProps
  * @see {@link SpineBoyProps}
  *
  * @example
+ * ```
  * <SpineBoy mode={mode} />
+ * ```
  */
 export const SpineBoy: React.FC<SpineBoyProps> = ({
   mode,

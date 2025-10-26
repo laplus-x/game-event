@@ -125,7 +125,9 @@ export const StageBackgroundNearField: React.FC<StageBackgroundProps> = ({
  * @see {@link StageBackgroundProps}
  *
  * @example
+ * ```
  * <StageBackground stage={1} wave={1} width={480} height={360} />
+ * ```
  */
 export const StageBackground: React.FC<StageBackgroundProps> = (props) => {
   return (

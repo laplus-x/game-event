@@ -29,7 +29,9 @@ interface ImageDividerProps {
  * @see {@link ImageDividerProps}
  *
  * @example
+ * ```
  * <ImageDivider image={image} slice={30} />
+ * ```
  */
 export const ImageDivider: React.FC<ImageDividerProps> = ({
   size = "middle",

@@ -11,7 +11,9 @@ interface TokenImageProps {
  * @see {@link TokenImageProps}
  *
  * @example
+ * ```
  * <TokenImage width={480} height={360} />
+ * ```
  */
 export const TokenImage: React.FC<TokenImageProps> = ({ width = 16, height = 16 }) => {
   return <img alt="token" src={image} width={width} height={height} />;

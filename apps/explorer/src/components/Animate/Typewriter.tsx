@@ -27,7 +27,9 @@ interface TypewriterProps {
  * @see {@link TypewriterProps}
  *
  * @example
+ * ```
  * <Typewriter text={text} delay={30} />
+ * ```
  */
 export const Typewriter: React.FC<TypewriterProps> = ({
   text,

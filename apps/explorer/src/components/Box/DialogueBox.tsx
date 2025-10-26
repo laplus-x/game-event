@@ -28,7 +28,9 @@ interface DialogueBoxProps {
  * @see {@link DialogueBoxProps}
  *
  * @example
+ * ```
  * <DialogueBox text={text} />
+ * ```
  */
 export const DialogueBox: React.FC<DialogueBoxProps> = ({ text, onFinish }) => {
   const [typing, setTyping] = useState<boolean>(false);

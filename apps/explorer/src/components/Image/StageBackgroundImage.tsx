@@ -24,7 +24,9 @@ interface StageBackgroundProps {
  * @see {@link StageBackgroundProps}
  *
  * @example
+ * ```
  * <StageBackgroundSkyImage stage={1} width={480} height={360} />
+ * ```
  */
 export const StageBackgroundSkyImage: React.FC<StageBackgroundProps> = ({
   // stage,
@@ -43,7 +45,9 @@ export const StageBackgroundSkyImage: React.FC<StageBackgroundProps> = ({
  * @see {@link StageBackgroundProps}
  *
  * @example
+ * ```
  * <StageBackgroundCloudImage stage={1} width={480} height={360} />
+ * ```
  */
 export const StageBackgroundCloudImage: React.FC<StageBackgroundProps> = ({
   // stage,
@@ -64,7 +68,9 @@ export const StageBackgroundCloudImage: React.FC<StageBackgroundProps> = ({
  * @see {@link StageBackgroundProps}
  *
  * @example
+ * ```
  * <StageBackgroundFarFieldImage stage={1} width={480} height={360} />
+ * ```
  */
 export const StageBackgroundFarFieldImage: React.FC<StageBackgroundProps> = ({
   // stage,
@@ -85,7 +91,9 @@ export const StageBackgroundFarFieldImage: React.FC<StageBackgroundProps> = ({
  * @see {@link StageBackgroundProps}
  *
  * @example
+ * ```
  * <StageBackgroundNearFieldImage stage={1} width={480} height={360} />
+ * ```
  */
 export const StageBackgroundNearFieldImage: React.FC<StageBackgroundProps> = ({
   // stage,

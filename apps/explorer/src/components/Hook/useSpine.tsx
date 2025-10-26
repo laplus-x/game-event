@@ -21,7 +21,9 @@ const defaultOptions: SpinePlayerConfig = {
  * @see {@link SpinePlayerConfig}
  *
  * @example
+ * ```
  * const { scope, player } = useSpine(options)
+ * ```
  */
 export const useSpine = (
   options: Omit<SpinePlayerConfig, "preserveDrawingBuffer">,

@@ -31,7 +31,9 @@ interface ExploreButtonProps {
  * @see {@link ExploreButtonProps}
  *
  * @example
+ * ```
  * <ExploreButton cost={25} time={1} />
+ * ```
  */
 export const ExploreButton: React.FC<ExploreButtonProps> = ({
   cost,

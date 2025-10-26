@@ -14,7 +14,9 @@ interface FadeProps {
  * @see {@link FadeProps}
  *
  * @example
+ * ```
  * <Fade visible={visible} />
+ * ```
  */
 export const Fade: React.FC<FadeProps> = ({
   visible,

@@ -21,7 +21,9 @@ interface PrologueProps {
  * @see {@link PrologueProps}
  *
  * @example
+ * ```
  * <Prologue text={text} />
+ * ```
  */
 export const Prologue: React.FC<PrologueProps> = ({ text }) => {
   return <div className={clsx("prologue")}>{text}</div>;
