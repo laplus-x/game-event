@@ -117,7 +117,7 @@ export const StageBackgroundNearField: React.FC<StageBackgroundProps> = ({
 
 
 /**
- * 關卡背景移動動畫
+ * 關卡背景移動動態特效
  *
  * @remarks
  * - 支援 視差滾動 效果

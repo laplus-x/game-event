@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { Fade } from "./Fade";
 
 const meta = {
-  title: "Explorer/Animate/Fade",
+  title: "Explorer/Motion/Fade",
   component: Fade,
 } satisfies Meta<typeof Fade>;
 

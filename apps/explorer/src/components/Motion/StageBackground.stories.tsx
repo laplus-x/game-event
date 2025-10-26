@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { StageBackground } from "./StageBackground";
 
 const meta = {
-  title: "Explorer/Animate/StageBackground",
+  title: "Explorer/Motion/StageBackground",
   component: StageBackground,
 } satisfies Meta<typeof StageBackground>;
 

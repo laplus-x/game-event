@@ -6,7 +6,7 @@ interface FadeProps {
 }
 
 /**
- * 淡出入動畫
+ * 淡出入動態特效
  * 
  * @description
  * 用於元件平滑過渡

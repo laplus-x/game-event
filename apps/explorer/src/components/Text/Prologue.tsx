@@ -16,7 +16,7 @@ interface PrologueProps {
  * 
  * @remarks
  * - 單純文字樣式
- * - 需要額外搭配動畫效果
+ * - 需要額外搭配動態特效
  *
  * @see {@link PrologueProps}
  *

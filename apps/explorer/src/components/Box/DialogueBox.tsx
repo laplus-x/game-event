@@ -1,4 +1,4 @@
-import { Typewriter } from "@explorer/components/Animate";
+import { Typewriter } from "@explorer/components/Motion";
 import clsx from "clsx";
 import React, { useEffect, useState } from "react";
 import "./dialogbox.css";
@@ -22,8 +22,8 @@ interface DialogueBoxProps {
  * 
  * @remarks
  * - 支援換行符號
- * - 支援跳過打字動畫
- * - 不支援淡入淡出動畫效果
+ * - 支援跳過打字動態特效
+ * - 不支援淡入淡出動態特效
  *
  * @see {@link DialogueBoxProps}
  *

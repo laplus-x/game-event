@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Typewriter } from "./Typewriter";
 
 const meta = {
-  title: "Explorer/Animate/Typewriter",
+  title: "Explorer/Motion/Typewriter",
   component: Typewriter,
 } satisfies Meta<typeof Typewriter>;
 

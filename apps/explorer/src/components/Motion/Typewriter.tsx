@@ -10,13 +10,13 @@ interface TypewriterProps {
    */
   delay?: number;
   /**
-   * 動畫完成事件
+   * 特效完成事件
    */
   onComplete?: () => void;
 }
 
 /**
- * 打字動畫
+ * 打字動態特效
  * 
  * @description
  * 用於對話框台詞
