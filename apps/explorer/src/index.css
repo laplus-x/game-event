@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+
+:root {
+  --animate-duration: 8s;
+  --animate-delay: 0.9s;
+
+  font-family: "HeiseiKakuGoW5", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: large;
+}
+
+@font-face {
+  font-family: "HeiseiKakuGoW5"; /* Choose a name for your font family */
+  src: url("./fonts/Heisei Kaku Gothic Std W5.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Unifont"; /* Choose a name for your font family */
+  src: url("./fonts/GNUUnifont9FullHintInstrUCSUR.ttf") format("truetype");
+}

@@ -1,0 +1,11 @@
+@import "../../index.css";
+
+.stage-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.stage-bg > * {
+  position: absolute;
+  display: flex;
+}

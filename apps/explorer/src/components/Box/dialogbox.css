@@ -1,0 +1,46 @@
+@import "../../index.css";
+
+@keyframes bounce {
+  from {
+    margin-top: 20px;
+  }
+  to {
+    margin-top: 23px;
+  }
+}
+
+.dialogbox {
+  display: inline-flex;
+
+  width: calc(100% - 16px);
+  text-align: left;
+  white-space: pre-line;
+
+  position: relative;
+  min-height: 100px;
+  border-radius: 2px;
+  margin: 8px;
+  padding: 8px 8px 30px 8px;
+  border: 2px solid white;
+  box-shadow:
+    0 2px 0 2px black,
+    inset 0 2px 0 2px black,
+    0 0 0 2px black,
+    inset 0 0 0 2px black;
+  user-select: none;
+  cursor: pointer;
+}
+
+.dialogbox:not(.typing) {
+  @variant after {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: black;
+
+    animation: bounce 0.5s infinite alternate;
+  }
+}

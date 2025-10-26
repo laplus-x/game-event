@@ -1,0 +1,20 @@
+@import "../../index.css";
+
+.prologue {
+  font-family: "HeiseiKakuGoW5", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: x-large;
+
+  @variant before {
+    content: "—";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @variant after {
+    content: "—";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

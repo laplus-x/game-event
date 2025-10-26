@@ -1,0 +1,30 @@
+.image-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 100%;
+  margin: 24px 0;
+
+  overflow: hidden;
+}
+
+.image-divider-border {
+  width: 100%;
+  border-image-repeat: space;
+}
+
+.image-divider-border--size__small {
+  margin-top: 8px;
+  border-image-outset: 8px;
+}
+
+.image-divider-border--size__middle {
+  margin-top: 16px;
+  border-image-outset: 16px;
+}
+
+.image-divider-border--size__large {
+  margin-top: 24px;
+  border-image-outset: 24px;
+}

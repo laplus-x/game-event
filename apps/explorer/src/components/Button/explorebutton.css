@@ -1,0 +1,45 @@
+@import "../../index.css";
+
+.explore-btn {
+  color: var(--color-yellow-400);
+  width: auto;
+  height: auto;
+  padding: 15px 60px 40px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  cursor: pointer;
+
+  @variant disabled {
+    filter: grayscale(1);
+    cursor: not-allowed;
+  }
+
+  @variant enabled {
+    @variant active {
+      transform: translateY(3px);
+    }
+  }
+}
+
+.explore-btn-title {
+  font-size: x-large;
+}
+
+.explore-btn-desc {
+  line-height: 16px;
+  font-size: large;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
