@@ -17,6 +17,6 @@ export const Default: Story = {
 Once upon a time, in a vast and bustling forest, lived a speedy hare who boasted about how fast he could run.
 Tired of hearing the hare's bragging, a slow but wise tortoise challenged him to a race.
 The hare, bursting with laughter, accepted the challenge, thinking it was an easy win.`,
-    onNext: () => console.log("onNext"),
+    onFinish: () => console.log("onFinish"),
   },
 };

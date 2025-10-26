@@ -15,7 +15,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // https://vite.dev/config/
 export default defineConfig({
   base: "/game-event",
-  assetsInclude: ["apps/**/*.atlas", "apps/**/*.skel"],
+  assetsInclude: ["**/*.atlas", "**/*.skel"],
   plugins: [tsconfigPaths(), react(), tailwindcss()],
   css: {
     postcss: {

@@ -3,9 +3,9 @@ import type {
   SpinePlayerConfig,
 } from "@esotericsoftware/spine-player";
 import { useEffect, useRef, type HTMLAttributes } from "react";
-import atlasData from "./assets/spineboy/spineboy-pma.atlas";
-import skelData from "./assets/spineboy/spineboy-pro.skel";
 import { useSpine } from "./useSpine";
+import atlasData from "/spineboy/spineboy-pma.atlas";
+import skelData from "/spineboy/spineboy-pro.skel";
 
 interface SpineBoyProps
   extends Omit<HTMLAttributes<HTMLDivElement>, "onError" | "onLoad"> {
