@@ -1,12 +1,6 @@
-import type {
-  SpinePlayer,
-  SpinePlayerConfig,
-} from "@esotericsoftware/spine-player";
-import { useEffect, useRef, type HTMLAttributes } from "react";
-import { useSpine } from "./useSpine";
-import atlasData from "/spineboy/spineboy-pma.atlas";
-import skelData from "/spineboy/spineboy-pro.skel";
-
+import type { SpinePlayerConfig } from "@esotericsoftware/spine-player";
+import { useSpine } from "@explorer/components/Hook";
+import { useEffect, type HTMLAttributes } from "react";
 interface SpineBoyProps
   extends Omit<HTMLAttributes<HTMLDivElement>, "onError" | "onLoad"> {
   mode: "run" | "walk" | "jump";
@@ -19,10 +13,10 @@ interface SpineBoyProps
 
 /**
  * 角色動畫
- * 
+ *
  * @description
  * 透過封裝簡易控制動畫狀態
- * 
+ *
  * @remarks
  * - 整合 Spine 動畫範例
  *
@@ -40,12 +34,9 @@ export const SpineBoy: React.FC<SpineBoyProps> = ({
   onUpdate,
   ...reset
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const player = useRef<SpinePlayer>(null);
-
-  const init = useSpine({
-    atlas: atlasData,
-    skeleton: skelData,
+  const { scope, player } = useSpine({
+    atlas: "/spineboy/spineboy-pma.atlas",
+    skeleton: "/spineboy/spineboy-pro.skel",
     animation: mode,
     success: onInit,
     error: onError,
@@ -54,19 +45,14 @@ export const SpineBoy: React.FC<SpineBoyProps> = ({
   });
 
   useEffect(() => {
-    if (!ref.current) return;
+    if (!player?.skeleton) return;
 
-    const instance = init(ref.current);
-    player.current = instance;
-
-    return () => instance.dispose();
-  }, []);
+    player?.setAnimation(mode, loop);
+  }, [player, mode, loop]);
 
   useEffect(() => {
-    if (!player.current?.skeleton) return;
+    return () => player?.dispose();
+  }, []);
 
-    player.current.setAnimation(mode, loop);
-  }, [player.current, mode, loop]);
-
-  return <div {...reset} ref={ref} />;
+  return <div {...reset} ref={scope} />;
 };
