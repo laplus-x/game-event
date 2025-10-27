@@ -37,8 +37,8 @@ export const SpineBoy: React.FC<SpineBoyProps> = ({
   ...reset
 }) => {
   const { scope, player } = useSpine({
-    atlas: "/spineboy/spineboy-pma.atlas",
-    skeleton: "/spineboy/spineboy-pro.skel",
+    atlas: import.meta.env.BASE_URL + "spineboy/spineboy-pma.atlas",
+    skeleton: import.meta.env.BASE_URL + "spineboy/spineboy-pro.skel",
     animation: mode,
     success: onInit,
     error: onError,
