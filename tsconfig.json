@@ -2,12 +2,26 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@explorer/*": ["apps/explorer/src/*"]
+      "@explorer/*": [
+        "apps/explorer/src/*"
+      ]
     },
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+      }
+    ],
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "strict": true
   },
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
   ]
 }

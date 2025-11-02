@@ -1,0 +1,17 @@
+@import "../../index.css";
+
+.title-board {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 210 / 63;
+  max-width: 210px;
+  max-height: 63px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color: var(--color-amber-300);
+}

@@ -1,0 +1,6 @@
+.state-scene {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  padding: 2% 5%;
+}

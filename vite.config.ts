@@ -1,4 +1,5 @@
 /// <reference types="vitest/config" />
+import UnpluginTypia from '@ryoppippi/unplugin-typia/vite';
 import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react-swc';
@@ -16,7 +17,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   base: "/game-event",
   assetsInclude: ["**/*.atlas", "**/*.skel"],
-  plugins: [tsconfigPaths(), react(), tailwindcss()],
+  plugins: [tsconfigPaths(), react(), tailwindcss(), UnpluginTypia()],
   css: {
     postcss: {
       plugins: [autoprefixer()]

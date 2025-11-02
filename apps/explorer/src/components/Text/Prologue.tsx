@@ -26,5 +26,5 @@ interface PrologueProps {
  * ```
  */
 export const Prologue: React.FC<PrologueProps> = ({ text }) => {
-  return <div className={clsx("prologue")}>{text}</div>;
+  return <span className={clsx("prologue")}>{text}</span>;
 };

@@ -1,4 +1,4 @@
-import { TokenImage } from "@explorer/components/Image";
+import { TokenImage } from "@explorer/components/Button";
 import bg from "./assets/btn-play.png";
 import "./explorebutton.css";
 

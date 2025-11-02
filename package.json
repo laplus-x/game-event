@@ -9,21 +9,31 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "storybook:build": "storybook build"
+    "storybook:build": "storybook build",
+    "prepare": "ts-patch install"
   },
   "dependencies": {
     "@esotericsoftware/spine-player": "^4.2.94",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.19",
     "es-toolkit": "^1.41.0",
+    "jotai": "^2.15.1",
     "motion": "^12.23.24",
+    "nanoid": "^5.1.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-use-websocket": "^4.13.0",
     "swr": "^2.3.6",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.16",
+    "ts-pattern": "^5.9.0",
+    "ts-results": "^3.3.0",
+    "typia": "^9.7.2",
+    "wretch": "^3.0.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "4.1.1",
     "@eslint/js": "^9.36.0",
+    "@ryoppippi/unplugin-typia": "^2.6.5",
     "@storybook/addon-a11y": "9.1.13",
     "@storybook/addon-docs": "9.1.13",
     "@storybook/addon-onboarding": "9.1.13",
@@ -50,7 +60,8 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "storybook": "9.1.13",
-    "typescript": "~5.9.3",
+    "ts-patch": "^3.3.0",
+    "typescript": "~5.9.2",
     "typescript-eslint": "^8.45.0",
     "vite": "npm:rolldown-vite@7.1.14",
     "vite-tsconfig-paths": "^5.1.4",

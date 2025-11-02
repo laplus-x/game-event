@@ -1,0 +1,9 @@
+@import "../../index.css";
+
+.background-scene {
+  display: flex;
+}
+
+.background-scene img {
+  object-fit: cover;
+}

@@ -1,0 +1,6 @@
+@import "../../index.css";
+
+.key-state {
+  display: flex;
+  gap: 5px;
+}
