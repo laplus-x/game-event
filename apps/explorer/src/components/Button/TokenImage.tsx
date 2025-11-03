@@ -1,4 +1,4 @@
-import image from "./assets/item/token.png";
+import image from "./assets/token.png";
 
 interface TokenImageProps {
   width?: number;
