@@ -8,7 +8,7 @@ interface EnemySceneProps {
 
 export const EnemyScene: React.FC<EnemySceneProps> = ({ mode = "move", children }) => {
   const variants: Variants = {
-    init: { x: `50%`, opacity: 1, transition: { duration: 0 } },
+    init: { x: `100%`, opacity: 1, transition: { duration: 0 } },
     move: { x: 0, transition: { duration: 0.6, ease: "linear" } },
     leave: {
       opacity: 0,

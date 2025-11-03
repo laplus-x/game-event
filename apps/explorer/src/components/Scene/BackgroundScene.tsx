@@ -2,8 +2,8 @@ import { motion, type Variants } from "motion/react";
 import "./background.css";
 
 interface BackgroundSceneProps {
-  offset: number;
-  slice: number;
+  offset?: number;
+  slice?: number;
   children: React.ReactNode;
 }
 
@@ -18,8 +18,8 @@ interface BackgroundSceneProps {
  * ```
  */
 export const BackgroundScene: React.FC<BackgroundSceneProps> = ({
-  offset,
-  slice,
+  offset = 0,
+  slice = 2,
   children,
 }) => {
   const w = 100 / slice;

@@ -2,6 +2,8 @@ import { Enemy } from "@explorer/components/Actor";
 import { BackgroundImage } from "@explorer/components/Scenery";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Player } from "../Actor/Player";
+import { ArenaScene } from "./ArenaScene";
+import { BackgroundScene } from "./BackgroundScene";
 import { EnemyScene } from "./EnemyScene";
 import { PlayerScene } from "./PlayerScene";
 import { Scene } from "./Scene";
@@ -12,11 +14,17 @@ const meta = {
   decorators: [
     (Story) => (
       <Scene width={420} height={520}>
-        <BackgroundImage width={420} height={520} />
-        <EnemyScene>
-          <Enemy />
-        </EnemyScene>
-        <Story />
+        <BackgroundScene>
+          <BackgroundImage width={6690} height={680} />
+        </BackgroundScene>
+        <ArenaScene
+          player={<Story />}
+          enemy={
+            <EnemyScene>
+              <Enemy />
+            </EnemyScene>
+          }
+        />
       </Scene>
     ),
   ],
